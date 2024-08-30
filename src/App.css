@@ -1,0 +1,83 @@
+/* Style for the body to center the calculator */
+body {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  background-color: #f0f0f0; /*  background color for the page */
+}
+
+/* Style for the calculator container */
+.calculator-container {
+  width: 380px; /* Adjust width as needed */
+  background-color: #000; /* Black background for the calculator */
+  padding: 20px; /* Padding around the calculator */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: shadow for better appearance */
+}
+
+/* Style for the expression and result display */
+.expression, .result {
+  color: #fff; /* White text color */
+  font-size: 2em; /* Adjust font size as needed */
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+/* Style for the button grid */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 10px;
+  grid-template-rows: repeat(5, auto); /* 5 rows */
+  direction: ltr; /* Left to right layout */
+}
+
+/* Style for buttons */
+.button {
+  font-size: 1.5em;
+  background-color: #333; /* Default dark gray */
+  color: #fff;
+  border: none;
+  border-radius: 50%; /* Round buttons */
+  cursor: pointer;
+  height: 80px; /* Height of the button */
+  width: 80px; /* Width of the button, should be equal to height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Styling specific buttons */
+.button-zero {
+  grid-column: 1 / span 2; /* Two columns wide */
+  background-color: #333; /* Dark gray for the zero button */
+  border-radius: 40px; /* Rounded corners */
+}
+
+.button-equals {
+  background-color: #ff6600; /* Orange background */
+  border-radius: 40px; /* Rounded corners */
+}
+
+.button-orange {
+  background-color: #ff6600; /* Orange for specific buttons */
+}
+
+.button-gray-light {
+  background-color: #ccc; /* Light gray for specific buttons */
+}
+
+.button-gray-dark {
+  background-color: #666; /* Dark gray for specific buttons */
+}
+/* Style for the zero button */
+.button-zero {
+  grid-column: span 2; /* گسترش به دو ستون */
+  width: 100%; /* عرض کامل */
+  background-color: #333; /* طوسی پررنگ */
+  border-radius: 40px; /* گوشه‌های گرد */
+}
